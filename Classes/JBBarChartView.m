@@ -624,17 +624,17 @@ static UIColor *kJBBarChartViewDefaultBarColor = nil;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self touchesBeganOrMovedWithTouches:touches];
+    
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self touchesBeganOrMovedWithTouches:touches];
+    
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self touchesEndedOrCancelledWithTouches:touches];
+    [self touchesBeganOrMovedWithTouches:touches];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
